@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { HStack } from "@chakra-ui/react"
-import './App.css'
+import { Button } from "@/components/ui/button";
+import { HStack } from "@chakra-ui/react";
+import "./App.css";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Button>Click me</Button>
       <Button>Click me</Button>
     </HStack>
-  )
+  );
 }
 
-export default App
+export default App;
