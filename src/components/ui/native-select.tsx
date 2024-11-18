@@ -27,7 +27,7 @@ interface NativeSelectItem {
 }
 
 interface NativeSelectField extends Select.FieldProps {
-  items?: Array<string | NativeSelectItem>;
+  items?: (string | NativeSelectItem)[];
 }
 
 export const NativeSelectField = React.forwardRef<
