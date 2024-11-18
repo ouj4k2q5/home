@@ -11,7 +11,7 @@ import { LuMoon, LuSun } from "react-icons/lu";
 // `error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type`
 // use type instead of interface
 // export interface ColorModeProviderProps extends ThemeProviderProps {}
-type ColorModeProviderProps = Readonly<ThemeProviderProps>;
+export type ColorModeProviderProps = Readonly<ThemeProviderProps>;
 
 export function ColorModeProvider(props: ColorModeProviderProps) {
   return (
