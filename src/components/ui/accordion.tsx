@@ -30,7 +30,11 @@ export const AccordionItemTrigger = React.forwardRef<
   );
 });
 
-interface AccordionItemContentProps extends Accordion.ItemContentProps {}
+// workaround for the error
+// `error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type`
+// use type instead of interface
+// interface AccordionItemContentProps extends Accordion.ItemContentProps {}
+type AccordionItemContentProps = Accordion.ItemContentProps;
 
 export const AccordionItemContent = React.forwardRef<
   HTMLDivElement,
