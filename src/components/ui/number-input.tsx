@@ -1,7 +1,11 @@
 import { NumberInput as ChakraNumberInput } from "@chakra-ui/react";
 import * as React from "react";
 
-export interface NumberInputProps extends ChakraNumberInput.RootProps {}
+// workaround for the error
+// `error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type`
+// use type instead of interface
+// export interface NumberInputProps extends ChakraNumberInput.RootProps {}
+type NumberInputProps = ChakraNumberInput.RootProps;
 
 export const NumberInputRoot = React.forwardRef<
   HTMLDivElement,

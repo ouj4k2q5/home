@@ -24,7 +24,7 @@ pre-commit:
         - rebase
     eslint:
       glob: "*.{js,ts,jsx,tsx}"
-      run: npx eslint --fix {staged_files} --ignore-path .gitignore
+      run: npx eslint --fix {staged_files}
       stage_fixed: true
       skip:
         - merge
