@@ -21,6 +21,7 @@ export const Content = () => {
           _active={{ transform: "scale(0.9)" }}
           _focus={{ color: "red.500", transform: "scale(1.1)" }}
           transition="all 0.5s ease-in-out"
+          focusRingColor="blackAlpha.200"
         >
           <FaYoutube size="35px" />
         </Link>
@@ -32,6 +33,7 @@ export const Content = () => {
           _active={{ transform: "scale(0.9)" }}
           _focus={{ color: "blue.400", transform: "scale(1.1)" }}
           transition="all 0.5s ease-in-out"
+          focusRingColor="blackAlpha.200"
         >
           <FaXTwitter size="30px" />
         </Link>
