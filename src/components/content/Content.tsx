@@ -1,14 +1,10 @@
-import { HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
+import { HStack, Link, Text, VStack } from "@chakra-ui/react";
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
-
+import { ShareDialog } from "./components/dialog/ShareDialog";
 export const Content = () => {
   return (
     <VStack gapY="10px" marginY="50px">
-      <Image
-        src="web-app-manifest-192x192.png"
-        borderRadius="full"
-        alt="ouj4k2q5"
-      />
+      <ShareDialog />
       <Text fontSize="2xl" fontWeight="bold" color="#e4e4e7">
         ouj4k2q5
       </Text>
