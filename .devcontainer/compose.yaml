@@ -1,0 +1,11 @@
+services:
+  ubuntu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        TAG: 22.04
+    image: plain:22.04
+    hostname: ubuntu
+    env_file:
+      - devcontainer.env

@@ -1,0 +1,55 @@
+{
+  // # devcontainer.json sample
+  // recommend: Do not sort json
+  // ## To create image
+  "name": "node & typescript",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+
+  // ## From base image
+  "dockerComposeFile": ["./compose.yaml"],
+  "service": "ubuntu",
+  "runServices": [],
+
+  // ## Resources
+  // warning: Can not use Env
+  "mounts": [
+    {
+      "type": "bind",
+      "source": "${localWorkspaceFolder}",
+      "target": "${containerWorkspaceFolder}"
+    }
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "developer"
+    },
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers-community/npm-features/prettier:1": {},
+    "ghcr.io/gvatsal60/dev-container-features/sonarlint:1": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers-community/npm-features/typescript:1": {}
+  },
+
+  // ## Environment
+  "remoteUser": "developer",
+  "containerEnv": {},
+  "remoteEnv": {},
+
+  // ## Container command
+  // warning: To use .sh you need mount
+  // info: key is output stage
+  "overrideCommand": true,
+
+  // ## IDE
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "oderwat.indent-rainbow",
+        "mhutchie.git-graph"
+      ],
+      "settings": {}
+    }
+  }
+}
