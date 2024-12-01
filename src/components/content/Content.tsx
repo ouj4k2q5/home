@@ -1,5 +1,5 @@
 import { HStack, Link, Text, VStack } from "@chakra-ui/react";
-import { FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { SiSoundcloud, SiX, SiYoutube } from "react-icons/si";
 import { ShareDialog } from "./components/dialog/ShareDialog";
 export const Content = () => {
   return (
@@ -19,7 +19,7 @@ export const Content = () => {
           transition="all 0.5s ease-in-out"
           focusRingColor="blackAlpha.200"
         >
-          <FaYoutube size="35px" />
+          <SiYoutube size="35px" />
         </Link>
         <Link
           href="https://x.com/ouj4k2q5"
@@ -31,7 +31,19 @@ export const Content = () => {
           transition="all 0.5s ease-in-out"
           focusRingColor="blackAlpha.200"
         >
-          <FaXTwitter size="30px" />
+          <SiX size="30px" />
+        </Link>
+        <Link
+          href="https://soundcloud.com/ouj4k2q5"
+          color="#e4e4e7"
+          aria-label="go to SoundCloud"
+          _hover={{ color: "orange.500", transform: "scale(1.1)" }}
+          _active={{ transform: "scale(0.9)" }}
+          _focus={{ color: "orange.500", transform: "scale(1.1)" }}
+          transition="all 0.5s ease-in-out"
+          focusRingColor="blackAlpha.200"
+        >
+          <SiSoundcloud size="30px" />
         </Link>
       </HStack>
     </VStack>
