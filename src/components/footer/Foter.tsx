@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="Footer">
       <Box backgroundColor={"blackAlpha.300"}>
         <Center h={16}>
-          <Text>&copy; 2024 ouj4k2q5</Text>
+          <Text>&copy; 2025 ouj4k2q5</Text>
         </Center>
       </Box>
     </footer>
