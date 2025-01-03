@@ -6,7 +6,9 @@ export const Header = () => {
     <header>
       <Box backgroundColor={"blackAlpha.300"} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <Text fontWeight="bold">ouj4k2q5</Text>
+          <Text fontWeight="bold" color="#e4e4e7">
+            ouj4k2q5
+          </Text>
           <Link
             href="https://github.com/ouj4k2q5/home"
             color="#e4e4e7"

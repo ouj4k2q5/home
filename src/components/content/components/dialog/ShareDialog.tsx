@@ -53,6 +53,10 @@ export const ShareDialog = () => {
             src="web-app-manifest-192x192.png"
             borderRadius="full"
             alt="Open a modal to share this page"
+            _hover={{ transform: "scale(1.1)" }}
+            _active={{ transform: "scale(0.9)" }}
+            _focus={{ transform: "scale(1.1)" }}
+            transition="all 0.5s ease-in-out"
           />
         </DialogTrigger>
         <DialogContent

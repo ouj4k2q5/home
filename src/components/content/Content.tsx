@@ -1,13 +1,10 @@
-import { HStack, Link, Text, VStack } from "@chakra-ui/react";
+import { HStack, Link, VStack } from "@chakra-ui/react";
 import { SiSoundcloud, SiX, SiYoutube } from "react-icons/si";
 import { ShareDialog } from "./components/dialog/ShareDialog";
 export const Content = () => {
   return (
-    <VStack gapY="10px" marginY="50px">
+    <VStack gapY="30px" marginY="50px">
       <ShareDialog />
-      <Text fontSize="2xl" fontWeight="bold" color="#e4e4e7">
-        ouj4k2q5
-      </Text>
       <HStack gapX="20px">
         <Link
           href="https://www.youtube.com/@ouj4k2q5"
